@@ -4,3 +4,23 @@
     overflow: hidden;
     height: 100vh;
 }
+
+.app{
+    z-index: 1;
+    background: rgba(100, 150, 200, 0.5);
+    height: 100vh;
+    width: 100vw;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    display: grid;
+    grid-template-rows: 10vh auto 10vh;
+    grid-template-columns: 1fr;
+
+    .content{
+        margin: 0 5rem;
+        border: 0.5px solid rgba(255, 255, 255, 0.5);
+        border-top: none;
+        border-bottom: none;
+        height: 80vh;
+    }
+}
