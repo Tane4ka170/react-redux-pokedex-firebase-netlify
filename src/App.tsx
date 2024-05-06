@@ -4,16 +4,20 @@ import Wrapper from "./sections/Wrapper";
 import Footer from "./sections/Footer";
 import Background from "./components/Background";
 import "./scss/index.scss";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 function App() {
   return (
     <div className="main-container">
       <Background />
-      <div className="app">
-        <Navbar />
-        <Wrapper />
-        <Footer />
-      </div>
+      <BrowserRouter>
+        <div className="app">
+          <Navbar />
+          <Routes><Route</Routes>
+          <Wrapper />
+          <Footer />
+        </div>
+      </BrowserRouter>
     </div>
   );
 }
