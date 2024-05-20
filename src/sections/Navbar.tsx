@@ -26,15 +26,23 @@ const Navbar = () => {
       route: "/about",
     },
   ];
+
   return (
     <nav>
       <div className="block">
         <img src={pokeballIcon} alt="Pokeball Icon" />
       </div>
       <div className="data">
-        <ul>{navigationRoutes.map({(name, route }, index)=> return <Link to={route} key={index}>
-          <li>{ name}</li>
-        </Link>})</ul>
+        <ul>
+          <div className="underline"></div>
+          <div className="underline"></div>
+          <div className="underline"></div>
+          {navigationRoutes.map(({ name, route }, index) => (
+            <Link to={route} key={index}>
+              <li>{name}</li>
+            </Link>
+          ))}
+        </ul>
       </div>
       <div className="block">
         <GiHamburgerMenu />

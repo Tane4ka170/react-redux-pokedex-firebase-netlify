@@ -79,9 +79,9 @@ nav {
     z-index: 0;
     bottom: 0;
     left: 0;
-    height: var(--underline-height);
+    height: calc(var(4px)/2);
     width: 20%;
-    background-color: var(--accent-color);
+    background-color: wheat;
     pointer-events: none;
     transition: transform var(--transition-duration) ease-in-out;
 
