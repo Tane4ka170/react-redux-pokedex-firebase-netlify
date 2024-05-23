@@ -1,11 +1,13 @@
 nav {
     display: grid;
     grid-template-columns: 5rem auto 5rem;
-    border-bottom: 0.5px solid rgba(255, 255, 255, 0.203);
+    border-bottom: 0.5px solid rgba(64, 64, 249, 0.203);
 
     .data {
         margin: 0px;
-        border: 0.5px solid rgba(255, 255, 255, 0.203);
+        border: 0.5px solid rgba(64,
+            64,
+            249, 0.203);
         border-top: none;
         border-bottom: none;
         padding: 0 20rem;
@@ -20,14 +22,14 @@ nav {
 
             a {
                 text-decoration: none;
-                color: white;
+                color: #333333;
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 border-bottom: 1px solid transparent;
 
                 // &:hover {
-                //   border-color: whitesmoke;
+                //   border-color: #f94085;
                 // }
                 li {
                     text-transform: uppercase;
@@ -39,7 +41,7 @@ nav {
             }
 
             // .active {
-            //   border-color: whitesmoke;
+            //   border-color: #f94085;
             // }
         }
     }
@@ -50,7 +52,7 @@ nav {
         align-items: center;
 
         svg {
-            color: white;
+            color: #40f994;
             font-size: 2rem;
             cursor: pointer;
         }
@@ -81,7 +83,7 @@ nav {
     left: 0;
     height: calc(4px/2);
     width: 20%;
-    background-color: wheat;
+    background-color: #333333;
     pointer-events: none;
     transition: transform var(--transition-duration) ease-in-out;
 

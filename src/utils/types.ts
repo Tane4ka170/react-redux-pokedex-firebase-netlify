@@ -4,3 +4,11 @@ export interface AppTypeInitialState {
   toasts: string[];
   currentPokemonTab: string;
 }
+
+export interface PokemonInitialStateType {
+  allPokemon: undefined | genericPokemonType[];
+  randomPokemons: generatedPokemonType[] | undefined;
+  compareQueue: generatedPokemonType[];
+  userPokemons: userPokemonsType[];
+  currentPokemon: undefined | currentPokemonType;
+}
