@@ -4,6 +4,7 @@ import { pokemonListRef } from "../../utils/firebaseConfig";
 import { defaultImages, images, pokemonTypes } from "../../utils";
 import { RootState } from "../store";
 import { userPokemonsType } from "../../utils/types";
+
 export const getUserPokemons = createAsyncThunk(
   "pokemon/userList",
   async (args, { getState }) => {

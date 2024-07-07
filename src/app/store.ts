@@ -4,8 +4,8 @@ import { PokemonSlice } from "./slices/PokemonSlice";
 
 export const store = configureStore({
   reducer: {
-    app: AppSlice.reducer,
     pokemon: PokemonSlice.reducer,
+    app: AppSlice.reducer,
   },
 });
 
