@@ -1,12 +1,19 @@
+@use "sass:color";
+
 @import url('https://fonts.googleapis.com/css2?family=Aguafina+Script&display=swap');
 
-body{
-    background-color: #f4f4f4;
-}
-
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Aguafina Script", cursive;
+}
+
+body {
+    font-family: "Raleway", sans-serif;
+    background-color: black;
+}
+
+#root {
+    $accent-color: #f51313;
+    --accent-color-dark: color.scale($accent-color, $lightness: -30%);
 }
