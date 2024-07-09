@@ -1,15 +1,13 @@
 footer {
     display: grid;
     grid-template-columns: 5rem auto 5rem;
-    border-top: 0.5px solid rgba(66,
-        135,
-        245, 0.203);
+    border-top: 0.5px solid rgba(255, 255, 255, 0.203);
 
     .block {
         display: flex;
         justify-content: center;
         align-items: center;
-        color: #f4f4f4;
+        color: #e21b5a;
 
         svg {
             cursor: pointer;
@@ -19,9 +17,7 @@ footer {
 
     .data {
         margin: 0px;
-        border: 0.5px solid rgba(66,
-            141,
-            245, 0.203);
+        border: 0.5px solid rgba(255, 255, 255, 0.203);
         border-top: none;
         border-bottom: none;
 
