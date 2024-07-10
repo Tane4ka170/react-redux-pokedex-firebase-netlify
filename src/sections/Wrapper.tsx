@@ -2,7 +2,7 @@ import React from "react";
 
 const Wrapper = (Component: React.FC) => () => {
   return (
-    <div className="conent">
+    <div className="content">
       <Component />
     </div>
   );

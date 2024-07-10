@@ -4,8 +4,7 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import { Link, useLocation } from "react-router-dom";
 import { useAppDispatch } from "../app/hooks";
 
-const Navbar = () => {
-  const navigationRoutes = [
+ const navigationRoutes = [
     {
       name: "Search",
       route: "/search",
@@ -27,10 +26,8 @@ const Navbar = () => {
       route: "/about",
     },
   ];
-
   const location = useLocation();
   const dispatch = useAppDispatch();
-
   useEffect(() => {
     const index = navigationRoutes.findIndex(({ route }) =>
       location.pathname.includes(route)
@@ -43,21 +40,28 @@ const Navbar = () => {
       underlines[i].style.transform = "translate3d(" + index * 100 + "%,0,0)";
     }
   }
+
   return (
     <nav>
       <div className="block">
-        <img src={pokeballIcon} alt="Pokeball Icon" />
+        <img src={pokeballIcon} alt="" />
       </div>
       <div className="data">
         <ul>
           <div className="underline"></div>
           <div className="underline"></div>
           <div className="underline"></div>
-          {navigationRoutes.map(({ name, route }, index) => (
-            <Link to={route} key={index}>
-              <li>{name}</li>
-            </Link>
-          ))}
+          {navigationRoutes.map(({ name, route }, index) => {
+            return (
+              <Link
+                to={route}
+                key={index}
+                onClick={(e) => dispatch(resetRandomPokemons())}
+              >
+                <li>{name}</li>
+              </Link>
+            );
+          })}
         </ul>
       </div>
       <div className="block">
@@ -65,6 +69,4 @@ const Navbar = () => {
       </div>
     </nav>
   );
-};
-
-export default Navbar;
+}
