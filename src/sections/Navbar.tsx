@@ -3,8 +3,11 @@ import pokeballIcon from "../assets/pokeball-icon.png";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { Link, useLocation } from "react-router-dom";
 import { useAppDispatch } from "../app/hooks";
+import { resetRandomPokemons } from "../app/slices/PokemonSlice";
 
- const navigationRoutes = [
+export default function Navbar() {
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  const navigationRoutes = [
     {
       name: "Search",
       route: "/search",
